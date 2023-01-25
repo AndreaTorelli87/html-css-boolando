@@ -1,0 +1,191 @@
+/* ----- REGOLE RIUTILIZZABILI ----- */
+
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: sans-serif;
+}
+
+.layout-width{
+   max-width: 1170px;
+   margin: 0 auto;
+}
+
+.flex-center{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.font-white{
+   color: white;
+}
+
+.relative{
+   position: relative;
+}
+
+.absolute{
+   position: absolute;
+}
+
+.bold{
+   font-weight: bold;
+}
+
+/* ----- REGOLE SPECIFICHE ----- */
+
+
+/* ----- HEADER ----- */
+
+header{
+   background-color: #FF6900;
+   box-shadow: 0px 2px 10px #000000b0;
+   position: fixed;
+   z-index: 10;
+   width: 100%;
+   top: 0;
+   left: 0;
+}
+
+#barra-arancio{
+   justify-content: space-between;
+   padding: 20px 0;
+}
+
+ul{
+   list-style:none;
+}
+
+a{
+   text-decoration: none;
+   padding: 0 5px;
+}
+
+li a:hover{
+   text-decoration: underline;
+}
+
+.logo{
+   height: 20px;
+}
+
+/* ----- MAIN ----- */
+
+main{
+   padding-top: 100px;
+}
+
+.container{
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.col{
+   width: calc(100% / 3 - 20px);
+   margin: 0 10px;
+}
+
+main img{
+   width: 100%;
+}
+
+.img-hover{
+   display: none;
+}
+
+.col:hover .img-hover{
+   display: inline-block;
+}
+
+.col:hover .img-norm{
+   display: none;
+}
+
+.tag{
+   padding: 5px;
+   bottom: 90px;
+   left: 0;
+}
+
+.tag2{
+   padding: 5px;
+   bottom: 90px;
+   left: 50px;
+}
+
+.tag2-l{
+   padding: 5px;
+   bottom: 90px;
+   left: 0px;
+}
+
+.red{
+   background-color: red;
+}
+
+.green{
+   background-color: #008000;
+}
+
+.heart{
+   background-color: white;
+   font-size: 30px;
+   padding: 10px;
+   top: 10px;
+   right: 0;
+}
+
+.heart:hover{
+   color: red;
+}
+
+.marca{
+   display: block;
+}
+
+.modello{
+   display: block;
+}
+
+.prezzo-scontato{
+   color: red;
+   display: inline;
+   font-size: 14px;
+}
+
+.prezzo-pieno{
+   text-decoration: line-through;
+   display: inline;
+   font-size: 14px;
+}
+
+
+
+/* ----- FOOTER ----- */
+
+footer{
+   background-color: black;
+   height: 100px;
+   margin-top: 40px;
+   padding-top: 20px ;
+}
+
+footer li, span{
+   font-size: 12px;
+}
+
+span .fa-brands{
+   padding-top: 5px;
+   font-size: 22px;
+}
+
+footer span{
+   display: inline-block;
+}
+
+footer > div{
+   display: flex;
+   justify-content: space-between;
+}
